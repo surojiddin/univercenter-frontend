@@ -41,8 +41,8 @@ import SplitterPanel from 'primevue/splitterpanel';
 import HeaderSection from '../components/MainPage/HeaderSection.vue'
 import LeftSection from '../components/MainPage/LeftSection.vue'
 import FooterSection from '../components/MainPage/FooterSection.vue'
-import RightSection from '../components/MainPage/RightSection.vue'
-import MainSection from '../components/MainPage/MainSection.vue'
+import RightSection from '../components/MainPage/RightSection2.vue'
+import MainSection from '../components/MainPage/MainSection2.vue'
 
 const { t } = useI18n()
 const isLoading = ref(false)
