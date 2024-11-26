@@ -19,6 +19,38 @@ const products = ref([
 
 const items = ref([
   {
+    label: "MITL",
+    icon: 'pi pi-palette',
+    items: [
+      {
+        label: 'Styled',
+        icon: 'pi pi-eraser',
+        route: '/theming/styled'
+      },
+      {
+        label: 'Unstyled',
+        icon: 'pi pi-heart',
+        route: '/theming/unstyled'
+      }
+    ]
+  },
+  {
+    label: "O'quv uslubiy bo'limi",
+    icon: 'pi pi-palette',
+    items: [
+      {
+        label: 'Styled',
+        icon: 'pi pi-eraser',
+        route: '/theming/styled'
+      },
+      {
+        label: 'Unstyled',
+        icon: 'pi pi-heart',
+        route: '/theming/unstyled'
+      }
+    ]
+  },
+  {
     label: "1-o'quv kanfedra",
     icon: 'pi pi-palette',
     items: [
@@ -43,6 +75,22 @@ const items = ref([
   },
   {
     label: "3-o'quv kanfedra",
+    icon: 'pi pi-home',
+    items: [
+      {
+        label: 'Vue.js',
+        icon: 'pi pi-star',
+        url: 'https://vuejs.org/'
+      },
+      {
+        label: 'Vite.js',
+        icon: 'pi pi-bookmark',
+        url: 'https://vuejs.org/'
+      }
+    ]
+  },
+  {
+    label: "4-o'quv kanfedra",
     icon: 'pi pi-home',
     items: [
       {
@@ -107,6 +155,7 @@ const duties = ref([
       </PanelMenu>
     </div>
 
+    <h3 class="text-xl font-medium dark:text-white text-center mb-2">Navbatchilar ro'yxati</h3>
     <Listbox :options="duties" optionLabel="name" class="w-full" listStyle="max-height:100px">
       <template #option="slotProps">
         <div class="flex items-center space-x-2">
